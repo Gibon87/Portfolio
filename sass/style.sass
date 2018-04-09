@@ -1,0 +1,55 @@
+$white-font-color: #fff
+$red-font-color: #e85151
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0 auto
+  background-color: #22272a
+  color: $white-font-color
+  font-family: 'Lato', sans-serif
+  max-width: 1500px
+
+header
+  display: flex
+  width: 100%
+  height: auto
+  border: 1px solid white
+
+.logo
+  border: 1px solid white
+  width: 50%
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  h1
+    margin-left: 40px
+    span
+      color: $red-font-color
+
+.nav
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  width: 50%
+  border: 1px solid white
+  font-size: 16px
+  ul
+    display: flex
+    padding: 0
+    margin: 0
+    list-style: none
+    justify-content: flex-end
+    li
+      border: 1px solid white
+      margin: 10px 40px
+      padding: 10px 10px
+      a
+        text-decoration: none
+        &:link
+          color: $white-font-color
+        &:visited
+          color: $white-font-color
+        &:hover
+          color: $red-font-color
