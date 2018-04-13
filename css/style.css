@@ -2,46 +2,44 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0 auto;
   background-color: #22272a;
   color: #fff;
   font-family: "Lato", sans-serif;
+  margin: 0 auto;
   max-width: 100%; }
 
 header {
-  position: sticky;
-  z-index: 999;
-  top: 0;
   display: flex;
+  height: 20vh;
+  position: sticky;
+  transition: background 0.3s ease;
+  top: 0;
   width: 100%;
-  height: 20vh; }
-
-.color {
-  transition: background .3s ease; }
+  z-index: 999; }
 
 .logo {
-  width: 40%;
+  align-items: center;
   display: flex;
   justify-content: flex-start;
-  align-items: center; }
+  width: 40%; }
   .logo h1 {
     margin-left: 40px; }
     .logo h1 span {
       color: #e85151; }
 
 .nav {
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 60%;
-  font-size: 16px; }
+  display: flex;
+  font-size: 16px;
+  justify-content: flex-end;
+  width: 60%; }
   .nav ul {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+    justify-content: flex-end;
     list-style: none;
-    justify-content: flex-end; }
+    padding: 0;
+    margin: 0; }
     .nav ul li {
       border: 1px solid white;
       margin: 10px 40px;
@@ -56,10 +54,10 @@ header {
           color: #e85151; }
 
 .hero {
-  width: 100%;
-  height: 80vh;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  height: 80vh;
+  width: 100%; }
   .hero .hero-left {
     background-image: url("../img/hero-background.jpg");
     background-repeat: no-repeat;
@@ -69,33 +67,33 @@ header {
     width: 50%; }
 
 .hero-right {
-  width: 50%;
-  display: flex;
   align-items: center;
-  justify-content: center; }
+  display: flex;
+  justify-content: center;
+  width: 50%; }
   .hero-right .box {
     border: 1px solid white;
+    height: 60vh;
     text-align: center;
-    width: 40vw;
-    height: 60vh; }
+    width: 40vw; }
     .hero-right .box h2 {
       margin: 10px;
       padding: 10px; }
     .hero-right .box p {
-      text-align: justify;
       margin: 10px;
-      padding: 10px; }
+      padding: 10px;
+      text-align: justify; }
     .hero-right .box button {
       background-color: transparent;
       border: 2px solid #fff;
       color: #fff;
       height: 40px;
       margin-top: 40px;
-      width: 200px;
-      outline: none; }
+      outline: none;
+      width: 200px; }
       .hero-right .box button:hover {
-        color: #22272a;
         background-color: #fff;
+        color: #22272a;
         transition: 0.3s; }
 
 .describe {
@@ -105,11 +103,11 @@ header {
 
 .about {
   flex-wrap: wrap;
+  border: 1px solid white;
   display: flex;
   flex-direction: row;
   height: 50vh;
-  width: 100%;
-  border: 1px solid white; }
+  width: 100%; }
   .about .photo-1 {
     height: 50vh;
     flex-grow: 2;
@@ -124,47 +122,47 @@ header {
     border: 1px solid white; }
 
 .works {
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
-  border: 1px solid white; }
+  width: 100%; }
   .works .row-1 {
+    border: 1px solid white;
     display: flex;
     flex-direction: row;
     height: 50vh;
-    width: 100%;
-    border: 1px solid white; }
+    width: 100%; }
     .works .row-1 .work-1 {
+      border: 1px solid white;
       flex-grow: 1;
-      height: 50vh;
-      border: 1px solid white; }
+      height: 50vh; }
     .works .row-1 .work-2 {
+      border: 1px solid white;
       flex-grow: 1;
-      height: 50vh;
-      border: 1px solid white; }
+      height: 50vh; }
     .works .row-1 .work-3 {
+      border: 1px solid white;
       flex-grow: 1;
-      height: 50vh;
-      border: 1px solid white; }
+      height: 50vh; }
     .works .row-1 .work-4 {
+      border: 1px solid white;
       flex-grow: 1;
-      height: 50vh;
-      border: 1px solid white; }
+      height: 50vh; }
 
 .row-2 {
+  border: 1px solid white;
   display: flex;
   flex-direction: row;
   height: 50vh;
-  width: 100%;
-  border: 1px solid white; }
+  width: 100%; }
   .row-2 .work-5 {
+    border: 1px solid white;
     flex-grow: 2;
-    height: 50vh;
-    border: 1px solid white; }
+    height: 50vh; }
   .row-2 .work-6 {
+    border: 1px solid white;
     flex-grow: 1;
-    height: 50vh;
-    border: 1px solid white; }
+    height: 50vh; }
 
 /*# sourceMappingURL=style.css.map */

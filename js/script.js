@@ -4,10 +4,10 @@ $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 140) {
-	    $(".color").css("background-color" , "#e85151");
+	    $("header").css("background-color" , "#e85151");
 	  }
 	  else{
-		  $(".color").css("background-color" , "transparent");
+		  $("header").css("background-color" , "transparent");
 	  }
   })
 })

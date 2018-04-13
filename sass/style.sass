@@ -6,31 +6,26 @@ $background-color: #22272a
   box-sizing: border-box
 
 body
-  margin: 0 auto
-  background-color: #22272a
+  background-color: $background-color
   color: $white-font-color
   font-family: "Lato", sans-serif
+  margin: 0 auto
   max-width: 100%
 
 header
-  position: sticky
-  z-index: 999
-  top: 0
   display: flex
-  width: 100%
   height: 20vh
-
-.color
-  transition: background .3s ease
-
-  // border: 1px solid white
+  position: sticky
+  transition: background 0.3s ease
+  top: 0
+  width: 100%
+  z-index: 999
 
 .logo
-  // border: 1px solid white
-  width: 40%
+  align-items: center
   display: flex
   justify-content: flex-start
-  align-items: center
+  width: 40%
 
   h1
     margin-left: 40px
@@ -39,21 +34,19 @@ header
       color: $red-font-color
 
 .nav
-  display: flex
-  justify-content: flex-end
   align-items: center
-  width: 60%
-
-  // border: 1px solid white
+  display: flex
   font-size: 16px
+  justify-content: flex-end
+  width: 60%
 
   ul
     display: flex
     flex-wrap: wrap
+    justify-content: flex-end
+    list-style: none
     padding: 0
     margin: 0
-    list-style: none
-    justify-content: flex-end
 
     li
       border: 1px solid white
@@ -75,10 +68,10 @@ header
 // SECTION HERO
 
 .hero
-  width: 100%
-  height: 80vh
   display: flex
   flex-direction: row
+  height: 80vh
+  width: 100%
 
   .hero-left
     background-image: url("../img/hero-background.jpg")
@@ -89,29 +82,25 @@ header
     width: 50%
 
 .hero-right
-  // background-image: url("../img/hero-2-background.jpg")
-  // background-repeat: no-repeat
-  // background-size: cover
-  // height: 80vh
-  width: 50%
-  display: flex
   align-items: center
+  display: flex
   justify-content: center
+  width: 50%
 
   .box
     border: 1px solid white
+    height: 60vh
     text-align: center
     width: 40vw
-    height: 60vh
 
     h2
       margin: 10px
       padding: 10px
 
     p
-      text-align: justify
       margin: 10px
       padding: 10px
+      text-align: justify
 
     button
       background-color: transparent
@@ -119,12 +108,12 @@ header
       color: $white-font-color
       height: 40px
       margin-top: 40px
-      width: 200px
       outline: none
+      width: 200px
 
       &:hover
-        color: $background-color
         background-color: $white-font-color
+        color: $background-color
         transition: 0.3s
 
 // SECTION DESCRIBE
@@ -133,7 +122,6 @@ header
   height: 50vh
   width: 100%
 
-
 // SECTION ABOUT
 =photo-body
   height: 50vh
@@ -141,27 +129,27 @@ header
   border: 1px solid white
 
 =work-body
+  border: 1px solid white
   flex-grow: 1
   height: 50vh
-  border: 1px solid white
 
 =row-body
+  border: 1px solid white
   display: flex
   flex-direction: row
   height: 50vh
   width: 100%
-  border: 1px solid white
 
 =column-body
+  border: 1px solid white
   display: flex
   flex-direction: column
   height: 100vh
   width: 100%
-  border: 1px solid white
-
 
 .about
   flex-wrap: wrap
+
   +row-body
 
   .photo-1
@@ -175,6 +163,7 @@ header
 
 .works
   +column-body
+
   .row-1
     +row-body
 
@@ -194,11 +183,11 @@ header
   +row-body
 
   .work-5
+    border: 1px solid white
     flex-grow: 2
     height: 50vh
-    border: 1px solid white
 
   .work-6
+    border: 1px solid white
     flex-grow: 1
     height: 50vh
-    border: 1px solid white
