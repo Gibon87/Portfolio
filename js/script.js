@@ -1,4 +1,4 @@
-// CHANGING HEADER BACKGROUND COLOR FUNCTION
+// CHANGING HEADER BACKGROUND-COLOR & SIZE  FUNCTION
 $(document).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
