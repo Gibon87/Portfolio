@@ -1,7 +1,7 @@
 $white-font-color: #fff
 $red-font-color: #e85151
 $background-color: #252839
-$gary-color: #677077
+$gray-color: #677077
 $light-gray-color: #b5b5b7
 
 
@@ -26,6 +26,7 @@ header
 
 .logo
   align-items: center
+  cursor: pointer
   display: flex
   justify-content: flex-start
   width: 40%
@@ -36,7 +37,7 @@ header
     margin-left: 40px
 
     span
-      color: $gary-color
+      color: $gray-color
 
 .nav
   align-items: center
@@ -60,6 +61,7 @@ header
       padding: 10px 10px
 
       a
+        cursor: pointer
         text-decoration: none
 
         &:link
@@ -112,6 +114,7 @@ header
       background-color: transparent
       border: 2px solid $white-font-color
       color: $white-font-color
+      cursor: pointer
       height: 40px
       margin-top: 40px
       outline: none
@@ -132,9 +135,12 @@ header
 
 // SECTION ABOUT
 =icon-body
-  width: 33,3%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 33.3%
   height: 50vh
-  flex-grow: 2
+
   border: 1px solid white
 
 =work-body
@@ -157,7 +163,6 @@ header
   width: 100%
 
 .about
-  justify-content: space-around
   display: flex
   flex-wrap: wrap
 
@@ -172,6 +177,11 @@ header
   .icon-3
     +icon-body
     border: 1px solid white
+
+.fab
+  color: $light-gray-color
+  cursor: pointer
+  font-size: 200px
 
 .works
   +column-body

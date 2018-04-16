@@ -9,10 +9,8 @@ body {
   max-width: 100%; }
 
 header {
-  display: -ms-flexbox;
   display: flex;
   height: 20vh;
-  position: -webkit-sticky;
   position: sticky;
   transition: 0.4s ease-out;
   top: 0;
@@ -20,12 +18,10 @@ header {
   z-index: 999; }
 
 .logo {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
+  align-items: center;
+  cursor: pointer;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  justify-content: flex-start;
   width: 40%; }
   .logo h1 {
     color: #b5b5b7;
@@ -34,21 +30,15 @@ header {
       color: #677077; }
 
 .nav {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   font-size: 16px;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
   width: 60%; }
   .nav ul {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
     margin: 0; }
@@ -57,6 +47,7 @@ header {
       margin: 10px 40px;
       padding: 10px 10px; }
       .nav ul li a {
+        cursor: pointer;
         text-decoration: none; }
         .nav ul li a:link {
           color: #fff; }
@@ -66,10 +57,8 @@ header {
           color: #e85151; }
 
 .hero {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   height: 80vh;
   width: 100%; }
   .hero .hero-left {
@@ -81,12 +70,9 @@ header {
     width: 50%; }
 
 .hero-right {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   width: 50%; }
   .hero-right .box {
     border: 1px solid white;
@@ -104,6 +90,7 @@ header {
       background-color: transparent;
       border: 2px solid #fff;
       color: #fff;
+      cursor: pointer;
       height: 40px;
       margin-top: 40px;
       outline: none;
@@ -121,88 +108,80 @@ header {
   width: 100%; }
 
 .about {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .about .icon-1 {
-    width: 33,3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
     height: 50vh;
-    -ms-flex-positive: 2;
-        flex-grow: 2;
     border: 1px solid white;
     border: 1px solid white; }
   .about .icon-2 {
-    width: 33,3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
     height: 50vh;
-    -ms-flex-positive: 2;
-        flex-grow: 2;
     border: 1px solid white;
     border: 1px solid white; }
   .about .icon-3 {
-    width: 33,3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
     height: 50vh;
-    -ms-flex-positive: 2;
-        flex-grow: 2;
     border: 1px solid white;
     border: 1px solid white; }
 
+.fab {
+  color: #b5b5b7;
+  cursor: pointer;
+  font-size: 200px; }
+
 .works {
   border: 1px solid white;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   height: 100vh;
   width: 100%; }
   .works .row-1 {
     border: 1px solid white;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     height: 50vh;
     width: 100%; }
     .works .row-1 .work-1 {
       border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-2 {
       border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-3 {
       border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-4 {
       border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      flex-grow: 1;
       height: 50vh; }
 
 .row-2 {
   border: 1px solid white;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   height: 50vh;
   width: 100%; }
   .row-2 .work-5 {
     border: 1px solid white;
-    -ms-flex-positive: 2;
-        flex-grow: 2;
+    flex-grow: 2;
     height: 50vh; }
   .row-2 .work-6 {
     border: 1px solid white;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    flex-grow: 1;
     height: 50vh; }
 
 footer {
@@ -211,3 +190,5 @@ footer {
   color: #000;
   height: 20vh;
   width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
