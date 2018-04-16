@@ -12,13 +12,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    autoprefixer: {
-      dist: {
-        files: {
-          'css/style.css': 'css/style.css'
-        }
-      }
-    },
     imagemin: {
       dynamic: {
         files: [{
@@ -29,6 +22,13 @@ module.exports = function(grunt) {
         }]
       }
     },
+    autoprefixer: {
+      dist: {
+        files: {
+          'css/style.css': 'css/style.css'
+        }
+      }
+    },
     watch: {
       css: {
         files: '**/*.sass',
@@ -37,10 +37,10 @@ module.exports = function(grunt) {
     }
   });
   // Load the plugins tasks
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   // Default task(s).
   grunt.registerTask('default', ["sass", "autoprefixer", "imagemin", "watch"]);
 };
