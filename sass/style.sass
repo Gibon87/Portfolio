@@ -1,6 +1,9 @@
 $white-font-color: #fff
 $red-font-color: #e85151
-$background-color: #22272a
+$background-color: #252839
+$gary-color: #677077
+$light-gray-color: #b5b5b7
+
 
 *
   box-sizing: border-box
@@ -11,13 +14,12 @@ body
   font-family: "Lato", sans-serif
   margin: 0 auto
   max-width: 100%
-  transition: background 0.5s ease
 
 header
   display: flex
   height: 20vh
   position: sticky
-  transition: background 0.5s ease
+  transition: 0.4s ease-out
   top: 0
   width: 100%
   z-index: 999
@@ -28,11 +30,13 @@ header
   justify-content: flex-start
   width: 40%
 
+
   h1
+    color: $light-gray-color
     margin-left: 40px
 
     span
-      color: $red-font-color
+      color: $gary-color
 
 .nav
   align-items: center
@@ -40,6 +44,7 @@ header
   font-size: 16px
   justify-content: flex-end
   width: 60%
+
 
   ul
     display: flex
@@ -115,7 +120,7 @@ header
       &:hover
         background-color: $white-font-color
         color: $background-color
-        transition: 0.3s
+        transition: 0.4s
 
 // SECTION DESCRIBE
 .describe
@@ -126,7 +131,8 @@ header
   width: 100%
 
 // SECTION ABOUT
-=photo-body
+=icon-body
+  width: 33,3%
   height: 50vh
   flex-grow: 2
   border: 1px solid white
@@ -151,18 +157,21 @@ header
   width: 100%
 
 .about
+  justify-content: space-around
+  display: flex
   flex-wrap: wrap
 
-  +row-body
+  .icon-1
+    +icon-body
+    border: 1px solid white
 
-  .photo-1
-    +photo-body
+  .icon-2
+    +icon-body
+    border: 1px solid white
 
-  .photo-2
-    +photo-body
-
-  .photo-3
-    +photo-body
+  .icon-3
+    +icon-body
+    border: 1px solid white
 
 .works
   +column-body

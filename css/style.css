@@ -2,18 +2,17 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #22272a;
+  background-color: #252839;
   color: #fff;
   font-family: "Lato", sans-serif;
   margin: 0 auto;
-  max-width: 100%;
-  transition: background 0.5s ease; }
+  max-width: 100%; }
 
 header {
   display: flex;
   height: 20vh;
   position: sticky;
-  transition: background 0.5s ease;
+  transition: 0.4s ease-out;
   top: 0;
   width: 100%;
   z-index: 999; }
@@ -24,9 +23,10 @@ header {
   justify-content: flex-start;
   width: 40%; }
   .logo h1 {
+    color: #b5b5b7;
     margin-left: 40px; }
     .logo h1 span {
-      color: #e85151; }
+      color: #677077; }
 
 .nav {
   align-items: center;
@@ -94,8 +94,8 @@ header {
       width: 200px; }
       .hero-right .box button:hover {
         background-color: #fff;
-        color: #22272a;
-        transition: 0.3s; }
+        color: #252839;
+        transition: 0.4s; }
 
 .describe {
   background-color: #fff;
@@ -105,23 +105,26 @@ header {
   width: 100%; }
 
 .about {
-  flex-wrap: wrap;
-  border: 1px solid white;
+  justify-content: space-around;
   display: flex;
-  flex-direction: row;
-  height: 50vh;
-  width: 100%; }
-  .about .photo-1 {
+  flex-wrap: wrap; }
+  .about .icon-1 {
+    width: 33,3%;
     height: 50vh;
     flex-grow: 2;
+    border: 1px solid white;
     border: 1px solid white; }
-  .about .photo-2 {
+  .about .icon-2 {
+    width: 33,3%;
     height: 50vh;
     flex-grow: 2;
+    border: 1px solid white;
     border: 1px solid white; }
-  .about .photo-3 {
+  .about .icon-3 {
+    width: 33,3%;
     height: 50vh;
     flex-grow: 2;
+    border: 1px solid white;
     border: 1px solid white; }
 
 .works {
