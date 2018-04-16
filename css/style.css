@@ -108,29 +108,31 @@ header {
   width: 100%; }
 
 .about {
+  margin: 40px 0;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap; }
   .about .icon-1 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
-    width: 33.3%;
+    width: 30%;
     height: 50vh;
     border: 1px solid white;
     border: 1px solid white; }
   .about .icon-2 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
-    width: 33.3%;
+    width: 30%;
     height: 50vh;
     border: 1px solid white;
     border: 1px solid white; }
   .about .icon-3 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
-    width: 33.3%;
+    width: 30%;
     height: 50vh;
     border: 1px solid white;
     border: 1px solid white; }
@@ -139,6 +141,17 @@ header {
   color: #b5b5b7;
   cursor: pointer;
   font-size: 200px; }
+  .fab:hover {
+    color: #f2b632;
+    transition: 0.6s; }
+
+.far {
+  color: #b5b5b7;
+  cursor: pointer;
+  font-size: 200px; }
+  .far:hover {
+    color: #f2b632;
+    transition: 0.6s; }
 
 .works {
   border: 1px solid white;
@@ -149,6 +162,7 @@ header {
   .works .row-1 {
     border: 1px solid white;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     height: 50vh;
     width: 100%; }
@@ -172,6 +186,7 @@ header {
 .row-2 {
   border: 1px solid white;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   height: 50vh;
   width: 100%; }
