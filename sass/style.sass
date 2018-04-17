@@ -98,7 +98,6 @@ header
   width: 50%
 
   .box
-    border: 1px solid white
     height: 60vh
     text-align: center
     width: 40vw
@@ -121,11 +120,20 @@ header
       margin-top: 40px
       outline: none
       width: 200px
-
       &:hover
         background-color: $white-font-color
         color: $background-color
         transition: 0.4s
+      a
+        text-decoration: none
+        &:link
+          color: $background-color
+
+        &:visited
+          color: $red-font-color
+
+        &:hover
+          color: $background-color
 
 // SECTION DESCRIBE
 .describe
