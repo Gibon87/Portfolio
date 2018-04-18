@@ -3,14 +3,14 @@ $red-font-color: #e85151
 $background-color: #252839
 $gray-color: #677077
 $light-gray-color: #b5b5b7
-$yellow-color: #f2b632
-
+$yellow-color: #ffd600
+$dark-gray-color: #272727
 
 *
   box-sizing: border-box
 
 body
-  background-color: $background-color
+  background-color: $dark-gray-color
   color: $white-font-color
   font-family: "Lato", sans-serif
   margin: 0 auto
@@ -84,7 +84,8 @@ header
   width: 100%
 
   .hero-left
-    background-image: url("../img/hero-background.jpg")
+    background-color: #95e6f0
+    background-image: url("../img/computer.gif")
     background-repeat: no-repeat
     background-size: cover
     overflow: hidden
@@ -111,38 +112,16 @@ header
       padding: 10px
       text-align: justify
 
-    button
-      background-color: transparent
-      border: 2px solid $white-font-color
-      color: $white-font-color
-      cursor: pointer
-      height: 40px
-      margin-top: 40px
-      outline: none
-      width: 200px
-      &:hover
-        background-color: $white-font-color
-        color: $background-color
-        transition: 0.4s
-      a
-        text-decoration: none
-        &:link
-          color: $background-color
 
-        &:visited
-          color: $red-font-color
-
-        &:hover
-          color: $background-color
 
 // SECTION DESCRIBE
 .describe
-  background-color: $background-color
+  background-color: $dark-gray-color
   color: $white-font-color
-  font-size: 112px
-  margin: 0 auto
+  font-size: 100px
+  margin: 100px auto
   padding: 120px 0
-  text-align: justify
+  text-align: left
   width: 80%
 
 
@@ -211,6 +190,29 @@ header
     color: $yellow-color
     transition: 0.6s
 
+
+//SECTION EXPLAIN
+
+.explain
+  background-color: $dark-gray-color
+  color: $white-font-color
+  font-size: 100px
+  margin: 0 auto
+  padding: 120px 0
+  width: 80%
+
+.explain-right
+  text-align: right
+  margin-bottom: 200px
+
+
+.explain-left
+  width: 80%
+  padding: 40px 10px
+  background-color: #7B6A64
+  span
+    color: #43D4CF
+
 .works
   +column-body
 
@@ -242,9 +244,54 @@ header
     flex-grow: 1
     height: 50vh
 
-footer
-  background-color: #fff
-  border: 1px solid white
-  color: #000
-  height: 20vh
+//CONTACT SECTION
+
+.contact
+  background-color: $white-font-color
+  height: 40vh
   width: 100%
+
+//FOOTER SECTION
+=social-body
+  align-items: center
+  background-color: $yellow-color
+  border-radius: 50%
+  display: flex
+  height: 80px
+  justify-content: center
+  margin: 0 30px
+  width: 80px
+
+footer
+  background-color: #272727
+  width: 100%
+  .center-footer
+    margin: 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.social-icons
+  margin: 40px 0
+  display: flex
+  justify-content: space-between
+
+  .twitter
+    +social-body
+    &:hover
+      background-color: #c9a806
+    .fab
+      font-size: 50px
+      color: #272727
+
+  .facebook
+    +social-body
+    &:hover
+      background-color: #c9a806
+    .fab
+      font-size: 50px
+      color: $dark-gray-color
+
+
+.content-text
