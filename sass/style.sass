@@ -5,6 +5,10 @@ $gray-color: #677077
 $light-gray-color: #b5b5b7
 $yellow-color: #ffd600
 $dark-gray-color: #272727
+$light-blue-color: #0AA4CA
+$linkedIN-color: #0077B5
+$gitHub-color: #8d0083
+$mail-color: #cd201f
 
 *
   box-sizing: border-box
@@ -29,14 +33,16 @@ header
   align-items: center
   cursor: pointer
   display: flex
-  font-size: 32px
+  font-size: 36px
+  font-family: "Bangers", cursive
   justify-content: flex-start
   width: 40%
 
 
   h1
-    color: $red-font-color
+    color: $white-font-color
     margin-left: 40px
+    letter-spacing: 3px
 
     span
       color: $gray-color
@@ -84,16 +90,19 @@ header
   width: 100%
 
   .hero-left
-    background-color: #95e6f0
+    background-color: $white-font-color
     background-image: url("../img/computer.gif")
     background-repeat: no-repeat
     background-size: cover
+    border: 2px solid $yellow-color
     overflow: hidden
     height: 80vh
     width: 50%
 
 .hero-right
   align-items: center
+  background-color: $white-font-color
+  color: $dark-gray-color
   display: flex
   justify-content: center
   width: 50%
@@ -116,11 +125,11 @@ header
 
 // SECTION DESCRIBE
 .describe
-  background-color: $dark-gray-color
+  background-color: $light-blue-color
   color: $white-font-color
-  font-size: 100px
+  font-size: 90px
   margin: 100px auto
-  padding: 120px 0
+  padding: 120px 20px
   text-align: left
   width: 80%
 
@@ -169,6 +178,7 @@ header
     +icon-body
     border: 1px solid white
 
+
   .icon-2
     +icon-body
     border: 1px solid white
@@ -180,14 +190,25 @@ header
 
 .fab
   +icon-style
+
+.fa-linkedin
   &:hover
-    color: $yellow-color
+    color: $linkedIN-color
+    transition: 0.6s
+
+.fab
+  +icon-style
+
+.fa-github-square
+  &:hover
+    color: $gitHub-color
     transition: 0.6s
 
 .far
   +icon-style
+  .fa-envelope
   &:hover
-    color: $yellow-color
+    color: $mail-color
     transition: 0.6s
 
 

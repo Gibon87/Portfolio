@@ -21,12 +21,14 @@ header {
   align-items: center;
   cursor: pointer;
   display: flex;
-  font-size: 32px;
+  font-size: 36px;
+  font-family: "Bangers", cursive;
   justify-content: flex-start;
   width: 40%; }
   .logo h1 {
-    color: #e85151;
-    margin-left: 40px; }
+    color: #fff;
+    margin-left: 40px;
+    letter-spacing: 3px; }
     .logo h1 span {
       color: #677077; }
 
@@ -63,16 +65,19 @@ header {
   height: 80vh;
   width: 100%; }
   .hero .hero-left {
-    background-color: #95e6f0;
+    background-color: #fff;
     background-image: url("../img/computer.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    border: 2px solid #ffd600;
     overflow: hidden;
     height: 80vh;
     width: 50%; }
 
 .hero-right {
   align-items: center;
+  background-color: #fff;
+  color: #272727;
   display: flex;
   justify-content: center;
   width: 50%; }
@@ -89,11 +94,11 @@ header {
       text-align: justify; }
 
 .describe {
-  background-color: #272727;
+  background-color: #0AA4CA;
   color: #fff;
-  font-size: 100px;
+  font-size: 90px;
   margin: 100px auto;
-  padding: 120px 0;
+  padding: 120px 20px;
   text-align: left;
   width: 80%; }
 
@@ -131,16 +136,26 @@ header {
   color: #b5b5b7;
   cursor: pointer;
   font-size: 200px; }
-  .fab:hover {
-    color: #ffd600;
-    transition: 0.6s; }
+
+.fa-linkedin:hover {
+  color: #0077B5;
+  transition: 0.6s; }
+
+.fab {
+  color: #b5b5b7;
+  cursor: pointer;
+  font-size: 200px; }
+
+.fa-github-square:hover {
+  color: #8d0083;
+  transition: 0.6s; }
 
 .far {
   color: #b5b5b7;
   cursor: pointer;
   font-size: 200px; }
   .far:hover {
-    color: #ffd600;
+    color: #cd201f;
     transition: 0.6s; }
 
 .explain {
