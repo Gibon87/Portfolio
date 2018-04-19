@@ -9,3 +9,5 @@ $(document).ready(function() {
     }
   })
 })
+
+// NOW I'M THINKING THAT THAT SCRITP IS CRAP :) I'M GONNA CHANGE THAT TO, ADD CLASS SCRIPT... HMM 

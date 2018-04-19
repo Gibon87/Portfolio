@@ -95,6 +95,7 @@ header {
 
 .describe {
   background-color: #0AA4CA;
+  box-shadow: 20px 20px 0 0px;
   color: #fff;
   font-size: 90px;
   margin: 100px auto;
@@ -171,9 +172,10 @@ header {
   margin-bottom: 200px; }
 
 .explain-left {
-  width: 80%;
+  background-color: #7B6A64;
+  box-shadow: 20px 20px 0px 4px;
   padding: 40px 10px;
-  background-color: #7B6A64; }
+  width: 80%; }
   .explain-left span {
     color: #43D4CF; }
 
