@@ -9,8 +9,10 @@ body {
   max-width: 100%; }
 
 header {
+  display: -ms-flexbox;
   display: flex;
   height: 20vh;
+  position: -webkit-sticky;
   position: sticky;
   transition: 0.4s ease-out;
   top: 0;
@@ -18,12 +20,15 @@ header {
   z-index: 2; }
 
 .logo {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   cursor: pointer;
+  display: -ms-flexbox;
   display: flex;
   font-size: 36px;
   font-family: "Bangers", cursive;
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   width: 40%; }
   .logo h1 {
     color: #fff;
@@ -33,15 +38,21 @@ header {
       color: #677077; }
 
 .nav {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
   display: flex;
   font-size: 16px;
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   width: 60%; }
   .nav ul {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
     list-style: none;
     padding: 0;
     margin: 0; }
@@ -60,8 +71,10 @@ header {
           color: #e85151; }
 
 .hero {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
   height: 80vh;
   width: 100%; }
   .hero .hero-left {
@@ -75,11 +88,14 @@ header {
     width: 50%; }
 
 .hero-right {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   background-color: #fff;
   color: #272727;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   width: 50%; }
   .hero-right .box {
     height: 60vh;
@@ -106,29 +122,41 @@ header {
 
 .about {
   margin: 40px 0;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .about .icon-1 {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     width: 30%;
     height: 50vh;
     border: 1px solid white;
     border: 1px solid white; }
   .about .icon-2 {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     width: 30%;
     height: 50vh;
     border: 1px solid white;
     border: 1px solid white; }
   .about .icon-3 {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     width: 30%;
     height: 50vh;
     border: 1px solid white;
@@ -177,48 +205,62 @@ header {
 
 .works {
   border: 1px solid white;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   height: 100vh;
   width: 100%; }
   .works .row-1 {
     border: 1px solid white;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-direction: row;
+        flex-direction: row;
     height: 50vh;
     width: 100%; }
     .works .row-1 .work-1 {
       border: 1px solid white;
-      flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-2 {
       border: 1px solid white;
-      flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-3 {
       border: 1px solid white;
-      flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-4 {
       border: 1px solid white;
-      flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
       height: 50vh; }
 
 .row-2 {
   border: 1px solid white;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: row;
+      flex-direction: row;
   height: 50vh;
   width: 100%; }
   .row-2 .work-5 {
     border: 1px solid white;
-    flex-grow: 2;
+    -ms-flex-positive: 2;
+        flex-grow: 2;
     height: 50vh; }
   .row-2 .work-6 {
     border: 1px solid white;
-    flex-grow: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
     height: 50vh; }
 
 .contact {
@@ -231,22 +273,31 @@ footer {
   width: 100%; }
   footer .center-footer {
     margin: 40px;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
 
 .social-icons {
   margin: 40px 0;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .social-icons .twitter {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     background-color: #ffd600;
     border-radius: 50%;
+    display: -ms-flexbox;
     display: flex;
     height: 80px;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     margin: 0 30px;
     width: 80px; }
     .social-icons .twitter:hover {
@@ -255,12 +306,15 @@ footer {
       font-size: 50px;
       color: #272727; }
   .social-icons .facebook {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     background-color: #ffd600;
     border-radius: 50%;
+    display: -ms-flexbox;
     display: flex;
     height: 80px;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     margin: 0 30px;
     width: 80px; }
     .social-icons .facebook:hover {
@@ -268,5 +322,3 @@ footer {
     .social-icons .facebook .fab {
       font-size: 50px;
       color: #272727; }
-
-/*# sourceMappingURL=style.css.map */
