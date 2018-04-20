@@ -14,13 +14,16 @@ $mail-color: #cd201f
   box-sizing: border-box
 
 body
-  background-color: $dark-gray-color
-  color: $white-font-color
+  height: auto
+  background-color: $gray-color
+  color: $dark-gray-color
   font-family: "Lato", sans-serif
-  margin: 0 auto
-  max-width: 100%
+  width: 100%
+  max-width: 1500px
 
 header
+  background: $dark-gray-color
+  box-shadow: -1px 8px 20px 0px #677077
   display: flex
   height: 20vh
   position: sticky
@@ -92,7 +95,6 @@ header
     background-image: url("../img/computer.gif")
     background-repeat: no-repeat
     background-size: cover
-    border: 2px solid $yellow-color
     overflow: hidden
     height: 80vh
     width: 50%
@@ -123,13 +125,15 @@ header
 // SECTION DESCRIBE
 .describe
   background-color: $light-blue-color
-  box-shadow: 20px 20px 0 0px
+  box-shadow: 3px 5px 20px 0px #000
   color: $white-font-color
   font-size: 90px
   margin: 100px auto
   padding: 120px 20px
   text-align: left
   width: 80%
+  h2
+    text-shadow: 3px 3px 9px #000;
 
 // SECTION ABOUT
 =icon-body
@@ -138,15 +142,15 @@ header
   justify-content: center
   width: 30%
   height: 50vh
-  border: 1px solid white
+  border: 1px solid black
 
 =work-body
-  border: 1px solid white
+  border: 1px solid black
   flex-grow: 1
   height: 50vh
 
 =row-body
-  border: 1px solid white
+  border: 1px solid black
   display: flex
   justify-content: space-around
   flex-direction: row
@@ -154,7 +158,7 @@ header
   width: 100%
 
 =column-body
-  border: 1px solid white
+  border: 1px solid black
   display: flex
   flex-direction: column
   height: 100vh
@@ -174,7 +178,7 @@ header
   .icon-1
     +icon-body
 
-    border: 1px solid white
+    border: 1px solid black
 
   .icon-2
     +icon-body
@@ -184,7 +188,7 @@ header
   .icon-3
     +icon-body
 
-    border: 1px solid white
+    border: 1px solid black
 
 .fab
   +icon-style
@@ -219,11 +223,16 @@ header
 .explain-right
   text-align: right
   margin-bottom: 200px
+  padding: 40px
+  h2
+    text-shadow: -4px 2px #7f8b94
 
 .explain-left
   background-color: #7B6A64
   box-shadow: 20px 20px 0px 4px
   padding: 40px 10px
+  position: relative
+  left: 40px
   width: 80%
 
   span
@@ -265,7 +274,8 @@ header
 .contact
   background-color: $white-font-color
   height: 40vh
-  width: 100%
+  margin: 20px auto
+  width: 86%
 
 //FOOTER SECTION
 =social-body
@@ -280,10 +290,12 @@ header
 
 footer
   background-color: #272727
+  color: white
+  height: 30vh
   width: 100%
 
+
   .center-footer
-    margin: 40px
     display: flex
     flex-direction: column
     align-items: center
@@ -314,4 +326,6 @@ footer
       font-size: 50px
       color: $dark-gray-color
 
-.content-text
+.content-footer
+  color: white
+  background-color: $dark-gray-color

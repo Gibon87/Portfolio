@@ -5,7 +5,7 @@ $(document).ready(function() {
     if (scroll > 10) {
       $("header").css("background-color", "#272727") && $("header").css("height", "12vh");
     } else {
-      $("header").css("background-color", "transparent") && $("header").css("height", "20vh");
+      $("header").css("background-color", "#272727") && $("header").css("height", "20vh");
     }
   })
 })

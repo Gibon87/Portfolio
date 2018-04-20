@@ -2,17 +2,18 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #272727;
-  color: #fff;
+  height: auto;
+  background-color: #677077;
+  color: #272727;
   font-family: "Lato", sans-serif;
-  margin: 0 auto;
-  max-width: 100%; }
+  width: 100%;
+  max-width: 1500px; }
 
 header {
-  display: -ms-flexbox;
+  background: #272727;
+  box-shadow: -1px 8px 20px 0px #677077;
   display: flex;
   height: 20vh;
-  position: -webkit-sticky;
   position: sticky;
   transition: 0.4s ease-out;
   top: 0;
@@ -20,15 +21,12 @@ header {
   z-index: 2; }
 
 .logo {
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   cursor: pointer;
-  display: -ms-flexbox;
   display: flex;
   font-size: 36px;
   font-family: "Bangers", cursive;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  justify-content: flex-start;
   width: 40%; }
   .logo h1 {
     color: #fff;
@@ -38,21 +36,15 @@ header {
       color: #677077; }
 
 .nav {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   font-size: 16px;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
   width: 60%; }
   .nav ul {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
     margin: 0; }
@@ -71,10 +63,8 @@ header {
           color: #e85151; }
 
 .hero {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   height: 80vh;
   width: 100%; }
   .hero .hero-left {
@@ -82,20 +72,16 @@ header {
     background-image: url("../img/computer.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #ffd600;
     overflow: hidden;
     height: 80vh;
     width: 50%; }
 
 .hero-right {
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   background-color: #fff;
   color: #272727;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   width: 50%; }
   .hero-right .box {
     height: 60vh;
@@ -112,55 +98,45 @@ header {
 
 .describe {
   background-color: #0AA4CA;
-  box-shadow: 20px 20px 0 0px;
+  box-shadow: 3px 5px 20px 0px #000;
   color: #fff;
   font-size: 90px;
   margin: 100px auto;
   padding: 120px 20px;
   text-align: left;
   width: 80%; }
+  .describe h2 {
+    text-shadow: 3px 3px 9px #000; }
 
 .about {
   margin: 40px 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -ms-flexbox;
+  justify-content: space-around;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .about .icon-1 {
-    -ms-flex-align: center;
-        align-items: center;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     width: 30%;
     height: 50vh;
-    border: 1px solid white;
-    border: 1px solid white; }
+    border: 1px solid black;
+    border: 1px solid black; }
   .about .icon-2 {
-    -ms-flex-align: center;
-        align-items: center;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     width: 30%;
     height: 50vh;
-    border: 1px solid white;
+    border: 1px solid black;
     border: 1px solid white; }
   .about .icon-3 {
-    -ms-flex-align: center;
-        align-items: center;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     width: 30%;
     height: 50vh;
-    border: 1px solid white;
-    border: 1px solid white; }
+    border: 1px solid black;
+    border: 1px solid black; }
 
 .fab {
   color: #b5b5b7;
@@ -193,111 +169,95 @@ header {
 
 .explain-right {
   text-align: right;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  padding: 40px; }
+  .explain-right h2 {
+    text-shadow: -4px 2px #7f8b94; }
 
 .explain-left {
   background-color: #7B6A64;
   box-shadow: 20px 20px 0px 4px;
   padding: 40px 10px;
+  position: relative;
+  left: 40px;
   width: 80%; }
   .explain-left span {
     color: #43D4CF; }
 
 .works {
-  border: 1px solid white;
-  display: -ms-flexbox;
+  border: 1px solid black;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   height: 100vh;
   width: 100%; }
   .works .row-1 {
-    border: 1px solid white;
-    display: -ms-flexbox;
+    border: 1px solid black;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
     height: 50vh;
     width: 100%; }
     .works .row-1 .work-1 {
-      border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      border: 1px solid black;
+      flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-2 {
-      border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      border: 1px solid black;
+      flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-3 {
-      border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      border: 1px solid black;
+      flex-grow: 1;
       height: 50vh; }
     .works .row-1 .work-4 {
-      border: 1px solid white;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      border: 1px solid black;
+      flex-grow: 1;
       height: 50vh; }
 
 .row-2 {
-  border: 1px solid white;
-  display: -ms-flexbox;
+  border: 1px solid black;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  justify-content: space-around;
+  flex-direction: row;
   height: 50vh;
   width: 100%; }
   .row-2 .work-5 {
     border: 1px solid white;
-    -ms-flex-positive: 2;
-        flex-grow: 2;
+    flex-grow: 2;
     height: 50vh; }
   .row-2 .work-6 {
     border: 1px solid white;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    flex-grow: 1;
     height: 50vh; }
 
 .contact {
   background-color: #fff;
   height: 40vh;
-  width: 100%; }
+  margin: 20px auto;
+  width: 86%; }
 
 footer {
   background-color: #272727;
+  color: white;
+  height: 30vh;
   width: 100%; }
   footer .center-footer {
-    margin: 40px;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 .social-icons {
   margin: 40px 0;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  justify-content: space-between; }
   .social-icons .twitter {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     background-color: #ffd600;
     border-radius: 50%;
-    display: -ms-flexbox;
     display: flex;
     height: 80px;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     margin: 0 30px;
     width: 80px; }
     .social-icons .twitter:hover {
@@ -306,15 +266,12 @@ footer {
       font-size: 50px;
       color: #272727; }
   .social-icons .facebook {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     background-color: #ffd600;
     border-radius: 50%;
-    display: -ms-flexbox;
     display: flex;
     height: 80px;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     margin: 0 30px;
     width: 80px; }
     .social-icons .facebook:hover {
@@ -322,3 +279,9 @@ footer {
     .social-icons .facebook .fab {
       font-size: 50px;
       color: #272727; }
+
+.content-footer {
+  color: white;
+  background-color: #272727; }
+
+/*# sourceMappingURL=style.css.map */
