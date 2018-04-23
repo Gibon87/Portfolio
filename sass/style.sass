@@ -15,11 +15,10 @@ $black-color: #000000
   box-sizing: border-box
 
 body
-  height: auto
-  // background-color: $gray-color
   background-image: linear-gradient(160deg, #ffffff 0%, #000204 113%);
   color: $dark-gray-color
   font-family: "Lato", sans-serif
+  height: auto
   width: 100%
   max-width: 1500px
 
@@ -144,7 +143,7 @@ header
   justify-content: center
   width: 30%
   height: 50vh
-  border: 1px solid black
+  // border: 1px solid black
 
 =work-body
   border: 1px solid black
@@ -180,17 +179,11 @@ header
   .icon-1
     +icon-body
 
-    border: 1px solid black
-
   .icon-2
     +icon-body
 
-    border: 1px solid white
-
   .icon-3
     +icon-body
-
-    border: 1px solid black
 
 .fab
   +icon-style
@@ -219,7 +212,6 @@ header
 
 .explain
   background-image: linear-gradient(160deg, #8d0083 0%, #02233e 127%)
-  // background-color: $dark-gray-color
   color: $white-font-color
   font-size: 100px
   margin: 0 auto
@@ -227,9 +219,7 @@ header
   width: 80%
 
 .explain-right
-  // box-shadow: -20px 19px 0px 0px
-  // background: $yellow-color
-  background-image: linear-gradient(160deg, #ffffff 0%, #000204 60%)
+  background-image: linear-gradient(160deg, #42424282 0%, #000204 60%)
   text-align: right
   margin-bottom: 200px
   padding: 40px 40px
@@ -242,9 +232,7 @@ header
     text-shadow: -4px 2px #7f8b94
 
 .explain-left
-  // background-color: #7B6A64
   background-image: linear-gradient(160deg, #8d0083 0%, #5982a5 127%)
-  // box-shadow: -20px 18px 0px 4px
   padding: 40px 10px
   position: relative
   left: -6%
@@ -294,6 +282,7 @@ header
 
 //FOOTER SECTION
 =social-body
+
   align-items: center
   background-color: $yellow-color
   border-radius: 50%
@@ -306,7 +295,6 @@ header
 footer
   background-color: #272727
   color: white
-
   width: 100%
 
 

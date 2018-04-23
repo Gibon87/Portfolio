@@ -2,10 +2,10 @@
   box-sizing: border-box; }
 
 body {
-  height: auto;
   background-image: linear-gradient(160deg, #ffffff 0%, #000204 113%);
   color: #272727;
   font-family: "Lato", sans-serif;
+  height: auto;
   width: 100%;
   max-width: 1500px; }
 
@@ -139,9 +139,7 @@ header {
     -ms-flex-pack: center;
         justify-content: center;
     width: 30%;
-    height: 50vh;
-    border: 1px solid black;
-    border: 1px solid black; }
+    height: 50vh; }
   .about .icon-2 {
     -ms-flex-align: center;
         align-items: center;
@@ -150,9 +148,7 @@ header {
     -ms-flex-pack: center;
         justify-content: center;
     width: 30%;
-    height: 50vh;
-    border: 1px solid black;
-    border: 1px solid white; }
+    height: 50vh; }
   .about .icon-3 {
     -ms-flex-align: center;
         align-items: center;
@@ -161,9 +157,7 @@ header {
     -ms-flex-pack: center;
         justify-content: center;
     width: 30%;
-    height: 50vh;
-    border: 1px solid black;
-    border: 1px solid black; }
+    height: 50vh; }
 
 .fab {
   color: #000;
@@ -198,7 +192,7 @@ header {
   width: 80%; }
 
 .explain-right {
-  background-image: linear-gradient(160deg, #ffffff 0%, #000204 60%);
+  background-image: linear-gradient(160deg, #42424282 0%, #000204 60%);
   text-align: right;
   margin-bottom: 200px;
   padding: 40px 40px;
