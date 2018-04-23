@@ -42,5 +42,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
   // Default task(s).
-  grunt.registerTask('default', ["sass", "autoprefixer", "imagemin", "watch"]);
+  grunt.registerTask('default', ["sass","imagemin","autoprefixer", "watch"]);
 };

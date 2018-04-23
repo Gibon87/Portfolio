@@ -9,13 +9,15 @@ $light-blue-color: #0AA4CA
 $linkedIN-color: #0077B5
 $gitHub-color: #8d0083
 $mail-color: #cd201f
+$black-color: #000000
 
 *
   box-sizing: border-box
 
 body
   height: auto
-  background-color: $gray-color
+  // background-color: $gray-color
+  background-image: linear-gradient(160deg, #ffffff 0%, #000204 113%);
   color: $dark-gray-color
   font-family: "Lato", sans-serif
   width: 100%
@@ -73,6 +75,7 @@ header
         cursor: pointer
         text-decoration: none
 
+
         &:link
           color: $white-font-color
 
@@ -85,24 +88,23 @@ header
 // SECTION HERO
 
 .hero
+  background-color: $white-font-color
+  background-image: url("../img/computer.gif")
+  background-repeat: no-repeat
+  background-size: cover
   display: flex
   flex-direction: row
   height: 80vh
   width: 100%
 
   .hero-left
-    background-color: $white-font-color
-    background-image: url("../img/computer.gif")
-    background-repeat: no-repeat
-    background-size: cover
-    overflow: hidden
     height: 80vh
     width: 50%
 
 .hero-right
   align-items: center
-  background-color: $white-font-color
-  color: $dark-gray-color
+  background-color: rgba(220, 220, 221, 0.91)
+  color: $black-color
   display: flex
   justify-content: center
   width: 50%
@@ -165,7 +167,7 @@ header
   width: 100%
 
 =icon-style
-  color: $light-gray-color
+  color: #000
   cursor: pointer
   font-size: 200px
 
@@ -197,11 +199,13 @@ header
   &:hover
     color: $linkedIN-color
     transition: 0.6s
+    transform: scale(1.1)
 
 .fa-github-square
   &:hover
     color: $gitHub-color
     transition: 0.6s
+    transform: scale(1.1)
 
 .far
   +icon-style
@@ -209,11 +213,13 @@ header
   &:hover
     color: $mail-color
     transition: 0.6s
+    transform: scale(1.1)
 
 //SECTION EXPLAIN
 
 .explain
-  background-color: $dark-gray-color
+  background-image: linear-gradient(160deg, #8d0083 0%, #02233e 127%)
+  // background-color: $dark-gray-color
   color: $white-font-color
   font-size: 100px
   margin: 0 auto
@@ -221,18 +227,27 @@ header
   width: 80%
 
 .explain-right
+  // box-shadow: -20px 19px 0px 0px
+  // background: $yellow-color
+  background-image: linear-gradient(160deg, #ffffff 0%, #000204 60%)
   text-align: right
   margin-bottom: 200px
-  padding: 40px
+  padding: 40px 40px
+  position: relative
+  right: -26%
+
+  width: 80%
+
   h2
     text-shadow: -4px 2px #7f8b94
 
 .explain-left
-  background-color: #7B6A64
-  box-shadow: 20px 20px 0px 4px
+  // background-color: #7B6A64
+  background-image: linear-gradient(160deg, #8d0083 0%, #5982a5 127%)
+  // box-shadow: -20px 18px 0px 4px
   padding: 40px 10px
   position: relative
-  left: 40px
+  left: -6%
   width: 80%
 
   span
@@ -291,11 +306,12 @@ header
 footer
   background-color: #272727
   color: white
-  height: 30vh
+
   width: 100%
 
 
   .center-footer
+    height: 30vh
     display: flex
     flex-direction: column
     align-items: center
@@ -311,6 +327,8 @@ footer
 
     &:hover
       background-color: #c9a806
+      transform: scale(1.1) rotateY(-360deg)
+      transition: .6s
 
     .fab
       font-size: 50px
@@ -321,11 +339,10 @@ footer
 
     &:hover
       background-color: #c9a806
+      transform: scale(1.1) rotateY(-360deg)
+      transition: .6s
 
     .fab
       font-size: 50px
       color: $dark-gray-color
-
-.content-footer
-  color: white
-  background-color: $dark-gray-color
+      &:hover
