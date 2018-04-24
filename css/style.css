@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background-image: linear-gradient(160deg, #ffffff 0%, #000204 113%);
+  background-image: linear-gradient(160deg, #ffffff 20%, #000204 111%);
   color: #272727;
   font-family: "Lato", sans-serif;
   height: auto;
@@ -63,21 +63,22 @@ header {
           color: #e85151; }
 
 .hero {
-  background-color: #fff;
-  background-image: url("../img/computer.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: row;
   height: 80vh;
   width: 100%; }
-  .hero .hero-left {
-    height: 80vh;
-    width: 50%; }
+
+.hero-left {
+  background-color: #fff;
+  background-image: url("../img/programmer.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 50%; }
 
 .hero-right {
   align-items: center;
-  background-color: rgba(220, 220, 221, 0.91);
+  background-color: rgba(255, 255, 255, 0.9);
   color: #000000;
   display: flex;
   justify-content: center;
@@ -96,7 +97,7 @@ header {
       text-align: center; }
 
 .describe {
-  background-color: #0AA4CA;
+  background-color: #424f87;
   box-shadow: 3px 5px 20px 0px #000;
   color: #fff;
   font-size: 90px;
@@ -134,26 +135,29 @@ header {
 .fab {
   color: #000;
   cursor: pointer;
-  font-size: 200px; }
-
-.fa-linkedin:hover {
-  color: #0077B5;
-  transition: 0.6s;
-  transform: scale(1.1); }
-
-.fa-github-square:hover {
-  color: #8d0083;
-  transition: 0.6s;
-  transform: scale(1.1); }
+  font-size: 200px;
+  transition: .6s; }
 
 .far {
   color: #000;
   cursor: pointer;
-  font-size: 200px; }
-  .far:hover {
-    color: #cd201f;
-    transition: 0.6s;
-    transform: scale(1.1); }
+  font-size: 200px;
+  transition: .6s; }
+
+.fa-linkedin:hover {
+  color: #0077B5;
+  transition: .6s;
+  transform: scale(1.1); }
+
+.fa-github-square:hover {
+  color: #8d0083;
+  transition: .6s;
+  transform: scale(1.1); }
+
+.fa-envelope:hover {
+  color: #cd201f;
+  transition: .6s;
+  transform: scale(1.1); }
 
 .explain {
   background-image: linear-gradient(160deg, #8d0083 0%, #02233e 127%);
@@ -242,7 +246,7 @@ footer {
   color: white;
   width: 100%; }
   footer .center-footer {
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,7 +286,10 @@ footer {
       transform: scale(1.1) rotateY(-360deg);
       transition: .6s; }
     .social-icons .facebook .fab {
-      font-size: 50px;
+      font-size: 3.5rem;
       color: #272727; }
+
+.content-text {
+  height: 10vh; }
 
 /*# sourceMappingURL=style.css.map */

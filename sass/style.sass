@@ -10,12 +10,13 @@ $linkedIN-color: #0077B5
 $gitHub-color: #8d0083
 $mail-color: #cd201f
 $black-color: #000000
+$dark-blue: #424f87
 
 *
   box-sizing: border-box
 
 body
-  background-image: linear-gradient(160deg, #ffffff 0%, #000204 113%);
+  background-image: linear-gradient(160deg, #ffffff 20%, #000204 111%)
   color: $dark-gray-color
   font-family: "Lato", sans-serif
   height: auto
@@ -87,22 +88,26 @@ header
 // SECTION HERO
 
 .hero
-  background-color: $white-font-color
-  background-image: url("../img/computer.gif")
-  background-repeat: no-repeat
-  background-size: cover
+  // background-color: $white-font-color
+  // background-image: url("../img/computer.gif")
+  // background-repeat: no-repeat
+  // background-size: cover
   display: flex
   flex-direction: row
   height: 80vh
   width: 100%
 
-  .hero-left
-    height: 80vh
-    width: 50%
+.hero-left
+  background-color: $white-font-color
+  background-image: url("../img/programmer.gif")
+  background-repeat: no-repeat
+  background-size: cover
+  height: 80vh
+  width: 50%
 
 .hero-right
   align-items: center
-  background-color: rgba(220, 220, 221, 0.91)
+  background-color: rgba(255, 255, 255, 0.9)
   color: $black-color
   display: flex
   justify-content: center
@@ -125,7 +130,7 @@ header
 
 // SECTION DESCRIBE
 .describe
-  background-color: $light-blue-color
+  background-color: $dark-blue
   box-shadow: 3px 5px 20px 0px #000
   color: $white-font-color
   font-size: 90px
@@ -134,7 +139,7 @@ header
   text-align: left
   width: 80%
   h2
-    text-shadow: 3px 3px 9px #000;
+    text-shadow: 3px 3px 9px #000
 
 // SECTION ABOUT
 =icon-body
@@ -143,7 +148,7 @@ header
   justify-content: center
   width: 30%
   height: 50vh
-  // border: 1px solid black
+
 
 =work-body
   border: 1px solid black
@@ -169,6 +174,7 @@ header
   color: #000
   cursor: pointer
   font-size: 200px
+  transition: .6s
 
 .about
   margin: 40px 0
@@ -188,24 +194,26 @@ header
 .fab
   +icon-style
 
+.far
+  +icon-style
+
 .fa-linkedin
   &:hover
     color: $linkedIN-color
-    transition: 0.6s
+    transition: .6s
     transform: scale(1.1)
 
 .fa-github-square
   &:hover
     color: $gitHub-color
-    transition: 0.6s
+    transition: .6s
     transform: scale(1.1)
 
-.far
-  +icon-style
-  .fa-envelope
+
+.fa-envelope
   &:hover
     color: $mail-color
-    transition: 0.6s
+    transition: .6s
     transform: scale(1.1)
 
 //SECTION EXPLAIN
@@ -301,7 +309,7 @@ footer
 
 
   .center-footer
-    height: 30vh
+    height: 40vh
     display: flex
     flex-direction: column
     align-items: center
@@ -333,6 +341,9 @@ footer
       transition: .6s
 
     .fab
-      font-size: 50px
+      font-size: 3.5rem
       color: $dark-gray-color
       &:hover
+
+.content-text
+  height: 10vh
