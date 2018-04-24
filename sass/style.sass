@@ -25,7 +25,7 @@ body
 
 header
   background: $dark-gray-color
-  box-shadow: -1px 8px 20px 0px #677077
+  box-shadow: (-1px) 8px 20px 0px #677077
   display: flex
   height: 20vh
   position: sticky
@@ -74,7 +74,6 @@ header
       a
         cursor: pointer
         text-decoration: none
-
 
         &:link
           color: $white-font-color
@@ -133,11 +132,12 @@ header
   background-color: $dark-blue
   box-shadow: 3px 5px 20px 0px #000
   color: $white-font-color
-  font-size: 90px
+  font-size: 70px
   margin: 100px auto
   padding: 120px 20px
   text-align: left
   width: 80%
+
   h2
     text-shadow: 3px 3px 9px #000
 
@@ -150,21 +150,23 @@ header
 
 =icon-body
   +flex-center
+
   width: 30%
   height: 50vh
 
-
 =work-body
   +flex-center
+
   flex-grow: 1
   font-size: 36px
   height: 50vh
-  transition: .6s
+  transition: 0.6s
 
 =work-hover
   +flex-center
-  box-shadow: -1px 8px 20px 0px $black-color
-  transition: .6s
+
+  box-shadow: (-1px) 8px 20px 0px $black-color
+  transition: 0.6s
   transform: scale(1.1)
   font-size: 36px
 
@@ -185,7 +187,7 @@ header
   color: #000
   cursor: pointer
   font-size: 200px
-  transition: .6s
+  transition: 0.6s
 
 .about
   background-color: $white-font-color
@@ -214,54 +216,69 @@ header
 .fa-linkedin
   &:hover
     color: $linkedIN-color
-    transition: .6s
+    transition: 0.6s
     transform: scale(1.05)
 
 .fa-github-square
   &:hover
     color: $gitHub-color
-    transition: .6s
+    transition: 0.6s
     transform: scale(1.05)
-
 
 .fa-envelope
   &:hover
     color: $mail-color
-    transition: .6s
+    transition: 0.6s
     transform: scale(1.05)
 
 //SECTION EXPLAIN
 
 .explain
-  background-image: linear-gradient(160deg, #8d0083 0%, #02233e 127%)
+  background-image: linear-gradient(160deg, #fdfdfd 0%, #000000 150%)
   box-shadow: 3px 5px 20px 0px #000
   color: $white-font-color
-  font-size: 90px
-  margin: 0 auto
+  font-size: 80px
+  margin: 100px auto
   padding: 120px 0
   width: 80%
 
 .explain-right
-  background-image: linear-gradient(160deg, #424242 0%, #000204 60%)
+  background-image: linear-gradient(160deg, #151414 0%, #5982a5 127%)
   box-shadow: 3px 5px 20px 0px #000
   text-align: right
-  margin-bottom: 200px
+  margin-bottom: 100px
   padding: 40px 40px
   position: relative
   right: -26%
   width: 80%
 
   h2
-    text-shadow: -4px 2px #7f8b94
+    text-shadow: 8px 0px 9px #000
+
+.explain-center
+  padding: 40px 0
+  position: relative
+  background-color: $white-font-color
+  box-shadow: 0px 10px 20px 0px #000
+  margin: 60px auto
+  justify-content: space-around
+  display: flex
+  flex-wrap: wrap
+  width: 114%
+  left: -8%
+
 
 .explain-left
-  background-image: linear-gradient(160deg, #800838 0%, #5982a5 127%)
+  margin-top: 100px
+  background-image: linear-gradient(160deg, #151414 0%, #5982a5 127%)
   box-shadow: 3px 5px 20px 0px #000
   padding: 40px 10px
   position: relative
   left: -6%
-  text-shadow: 3px 3px 9px #000
   width: 80%
+
+  h3
+    text-shadow: 3px 3px 9px #000
 
   span
     color: #43D4CF
@@ -274,25 +291,33 @@ header
 
     .work-1
       +work-body
+
       background-color: $yellow-color
+
       &:hover
         +work-hover
 
     .work-2
       +work-body
+
       background-color: $red-font-color
+
       &:hover
         +work-hover
 
     .work-3
       +work-body
+
       background-color: $dark-blue
+
       &:hover
         +work-hover
 
     .work-4
       +work-body
+
       background-color: $gitHub-color
+
       &:hover
         +work-hover
 
@@ -326,10 +351,11 @@ header
 =social-hover
   background-color: #c9a806
   transform: scale(1.1) rotateY(-360deg)
-  transition: .6s
+  transition: 0.6s
 
 .contact
   +flex-center
+
   background-image: linear-gradient(160deg, #272727 50%, #8e8e8e 65%)
   box-shadow: 3px 5px 20px 0px #000
   height: 40vh
@@ -338,20 +364,19 @@ header
   top: -54px
   width: 92%
 
-
-
 .cv-button
   +flex-center
+
   box-shadow: 3px 5px 20px 0px #000
   background-color: $yellow-color
   border-radius: 50px
   color: $black-color
   height: 60px
   width: 200px
+
   &:hover
     transform: scale(1.1)
-    transition: .6s
-
+    transition: 0.6s
 
 //FOOTER SECTION
 =social-body
@@ -367,7 +392,7 @@ header
 =social-hover
   background-color: #c9a806
   transform: scale(1.1) rotateY(-360deg)
-  transition: .6s
+  transition: 0.6s
 
 =fab-body
   font-size: 3.5rem
@@ -377,11 +402,15 @@ footer
   background-color: #272727
   color: white
   width: 100%
+
   .center-footer
     +flex-center
+
     height: 40vh
     flex-direction: column
+
     .cv-button
+
     +flex-center
 
 .social-icons
@@ -394,6 +423,7 @@ footer
 
     &:hover
       +social-hover
+
     .fab
       +fab-body
 
