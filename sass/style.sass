@@ -142,21 +142,33 @@ header
     text-shadow: 3px 3px 9px #000
 
 // SECTION ABOUT
-=icon-body
+
+=flex-center
   align-items: center
   display: flex
   justify-content: center
+
+=icon-body
+  +flex-center
   width: 30%
   height: 50vh
 
 
 =work-body
-  border: 1px solid black
+  +flex-center
   flex-grow: 1
+  font-size: 36px
   height: 50vh
+  transition: .6s
+
+=work-hover
+  +flex-center
+  box-shadow: -1px 8px 20px 0px $black-color
+  transition: .6s
+  transform: scale(1.1)
+  font-size: 36px
 
 =row-body
-  border: 1px solid black
   display: flex
   justify-content: space-around
   flex-direction: row
@@ -164,7 +176,6 @@ header
   width: 100%
 
 =column-body
-  border: 1px solid black
   display: flex
   flex-direction: column
   height: 100vh
@@ -201,20 +212,20 @@ header
   &:hover
     color: $linkedIN-color
     transition: .6s
-    transform: scale(1.1)
+    transform: scale(1.05)
 
 .fa-github-square
   &:hover
     color: $gitHub-color
     transition: .6s
-    transform: scale(1.1)
+    transform: scale(1.05)
 
 
 .fa-envelope
   &:hover
     color: $mail-color
     transition: .6s
-    transform: scale(1.1)
+    transform: scale(1.05)
 
 //SECTION EXPLAIN
 
@@ -227,7 +238,7 @@ header
   width: 80%
 
 .explain-right
-  background-image: linear-gradient(160deg, #42424282 0%, #000204 60%)
+  background-image: linear-gradient(160deg, #424242 0%, #000204 60%)
   text-align: right
   margin-bottom: 200px
   padding: 40px 40px
@@ -240,7 +251,7 @@ header
     text-shadow: -4px 2px #7f8b94
 
 .explain-left
-  background-image: linear-gradient(160deg, #8d0083a8 0%, #5982a5 127%)
+  background-image: linear-gradient(160deg, #800838 0%, #5982a5 127%)
   padding: 40px 10px
   position: relative
   left: -6%
@@ -257,42 +268,88 @@ header
 
     .work-1
       +work-body
+      background-color: $yellow-color
+      &:hover
+        +work-hover
 
     .work-2
       +work-body
+      background-color: $red-font-color
+      &:hover
+        +work-hover
 
     .work-3
       +work-body
+      background-color: $dark-blue
+      &:hover
+        +work-hover
 
     .work-4
       +work-body
+      background-color: $gitHub-color
+      &:hover
+        +work-hover
 
 .row-2
   +row-body
 
   .work-5
-    border: 1px solid black
+    background-color: $light-blue-color
     flex-grow: 2
     height: 50vh
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 36px
 
   .work-6
-    border: 1px solid black
+    background-color: $linkedIN-color
     flex-grow: 1
     height: 50vh
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 36px
 
 //CONTACT SECTION
+=flex-center
+  align-items: center
+  display: flex
+  justify-content: center
+
+=social-hover
+  background-color: #c9a806
+  transform: scale(1.1) rotateY(-360deg)
+  transition: .6s
 
 .contact
+  background-image: linear-gradient(160deg, #272727 50%, #8e8e8e 65%)
   background-color: $white-font-color
+  display: flex
+  align-items: center
   height: 40vh
+  justify-content: center
   margin: 20px auto
   position: relative
   top: -54px
   width: 92%
 
+
+
+.cv-button
+  +flex-center
+  background-color: $yellow-color
+  border-radius: 50px
+  color: $black-color
+  height: 60px
+  width: 200px
+  &:hover
+    transform: scale(1.1)
+    transition: .6s
+
+
 //FOOTER SECTION
 =social-body
-
   align-items: center
   background-color: $yellow-color
   border-radius: 50%
@@ -302,18 +359,25 @@ header
   margin: 0 30px
   width: 80px
 
+=social-hover
+  background-color: #c9a806
+  transform: scale(1.1) rotateY(-360deg)
+  transition: .6s
+
+=fab-body
+  font-size: 3.5rem
+  color: $dark-gray-color
+
 footer
   background-color: #272727
   color: white
   width: 100%
-
-
   .center-footer
+    +flex-center
     height: 40vh
-    display: flex
     flex-direction: column
-    align-items: center
-    justify-content: center
+    .cv-button
+    +flex-center
 
 .social-icons
   margin: 40px 0
@@ -324,26 +388,18 @@ footer
     +social-body
 
     &:hover
-      background-color: #c9a806
-      transform: scale(1.1) rotateY(-360deg)
-      transition: .6s
-
+      +social-hover
     .fab
-      font-size: 50px
-      color: #272727
+      +fab-body
 
   .facebook
     +social-body
 
     &:hover
-      background-color: #c9a806
-      transform: scale(1.1) rotateY(-360deg)
-      transition: .6s
+      +social-hover
 
     .fab
-      font-size: 3.5rem
-      color: $dark-gray-color
-      &:hover
+      +fab-body
 
 .content-text
   height: 10vh
