@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > 10) {
-      $("header").css("background-color", "#272727") && $("header").css("height", "12vh");
+      $("header").css("background-color", "#272727") && $("header").css("height", "16vh");
     } else {
       $("header").css("background-color", "#272727") && $("header").css("height", "20vh");
     }

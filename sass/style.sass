@@ -27,7 +27,6 @@ header
   background: $dark-gray-color
   box-shadow: (-1px) 8px 20px 0px #677077
   display: flex
-  height: 20vh
   position: sticky
   transition: 0.4s ease-out
   top: 0
@@ -41,7 +40,7 @@ header
   font-size: 36px
   font-family: "Bangers", cursive
   justify-content: flex-start
-  width: 40%
+  width: 400px
 
   h1
     color: $white-font-color
@@ -52,6 +51,7 @@ header
       color: $gray-color
 
 .nav
+  min-height: 80px
   align-items: center
   display: flex
   font-size: 16px
@@ -87,40 +87,41 @@ header
 // SECTION HERO
 
 .hero
-  // background-color: $white-font-color
-  // background-image: url("../img/computer.gif")
-  // background-repeat: no-repeat
-  // background-size: cover
+  align-items: center
   display: flex
-  flex-direction: row
-  height: 80vh
+  flex-wrap: wrap
+  justify-content: space-around
   width: 100%
 
 .hero-left
+  margin: 14px 0
+  border: 1px solid black
   background-color: $white-font-color
   background-image: url("../img/programmer.gif")
   background-repeat: no-repeat
   background-size: cover
-  height: 80vh
-  width: 50%
+  height: 500px
+  width: 600px
 
 .hero-right
+  margin: 14px 0
+  border: 1px solid black
   align-items: center
   background-color: rgba(255, 255, 255, 0.9)
   color: $black-color
   display: flex
   justify-content: center
-  width: 50%
+  height: 500px
+  width: 600px
 
   .box
-    height: 60vh
+    border: 1px solid black
+    height: 160px
     text-align: center
-    width: 40vw
-
+    width: 140px
     h2
       margin: 10px
       padding: 10px
-
     p
       font-size: 40px
       margin: 10px
@@ -144,27 +145,26 @@ header
 // SECTION ABOUT
 
 =flex-center
+  flex-wrap: wrap
   align-items: center
   display: flex
   justify-content: center
 
 =icon-body
   +flex-center
+  margin: 20px
+  width: 40px
+  height: 40px
 
-  width: 30%
-  height: 50vh
 
 =work-body
-  +flex-center
 
-  flex-grow: 1
-  font-size: 36px
-  height: 50vh
+  width: 360px
+  height: 360px
   transition: 0.6s
 
 =work-hover
   +flex-center
-
   box-shadow: (-1px) 8px 20px 0px $black-color
   transition: 0.6s
   transform: scale(1.1)
@@ -172,15 +172,13 @@ header
 
 =row-body
   display: flex
-  justify-content: space-around
-  flex-direction: row
-  height: 50vh
+  flex-wrap: wrap
+  justify-content: center
   width: 100%
 
 =column-body
   display: flex
-  flex-direction: column
-  height: 100vh
+  flex-wrap: wrap
   width: 100%
 
 =icon-style
@@ -209,9 +207,13 @@ header
 
 .fab
   +icon-style
+  margin: 20px
+  transition: 0.6s
 
 .far
   +icon-style
+  margin: 20px
+  transition: 0.6s
 
 .fa-linkedin
   &:hover
@@ -355,7 +357,6 @@ header
 
 .contact
   +flex-center
-
   background-image: linear-gradient(160deg, #272727 50%, #8e8e8e 65%)
   box-shadow: 3px 5px 20px 0px #000
   height: 40vh
@@ -372,6 +373,7 @@ header
   border-radius: 50px
   color: $black-color
   height: 60px
+  transition: .6s
   width: 200px
 
   &:hover
@@ -409,9 +411,6 @@ footer
     height: 40vh
     flex-direction: column
 
-    .cv-button
-
-    +flex-center
 
 .social-icons
   margin: 40px 0
@@ -437,4 +436,4 @@ footer
       +fab-body
 
 .content-text
-  height: 10vh
+  height: 20%
