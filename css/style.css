@@ -6,8 +6,7 @@ body {
   color: #272727;
   font-family: "Lato", sans-serif;
   height: auto;
-  width: 100%;
-  max-width: 1500px; }
+  width: 100%; }
 
 header {
   background: #272727;
@@ -40,7 +39,7 @@ header {
   display: flex;
   font-size: 16px;
   justify-content: flex-end;
-  width: 60%; }
+  width: 70%; }
   .nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -235,7 +234,8 @@ header {
     justify-content: center;
     width: 100%; }
     .works .row-1 .work-1 {
-      width: 360px;
+      margin: 2px;
+      width: 24.5%;
       height: 360px;
       transition: 0.6s;
       background-color: #ffd600; }
@@ -249,7 +249,8 @@ header {
         transform: scale(1.1);
         font-size: 36px; }
     .works .row-1 .work-2 {
-      width: 360px;
+      margin: 2px;
+      width: 24.5%;
       height: 360px;
       transition: 0.6s;
       background-color: #e85151; }
@@ -263,7 +264,8 @@ header {
         transform: scale(1.1);
         font-size: 36px; }
     .works .row-1 .work-3 {
-      width: 360px;
+      margin: 2px;
+      width: 24.5%;
       height: 360px;
       transition: 0.6s;
       background-color: #424f87; }
@@ -277,7 +279,8 @@ header {
         transform: scale(1.1);
         font-size: 36px; }
     .works .row-1 .work-4 {
-      width: 360px;
+      margin: 2px;
+      width: 24.5%;
       height: 360px;
       transition: 0.6s;
       background-color: #8d0083; }
