@@ -245,7 +245,7 @@ header {
         justify-content: center;
         box-shadow: -1px 8px 20px 0px #000000;
         transition: 0.6s;
-        transform: scale(1.1);
+        transform: scale(1.01);
         font-size: 36px; }
     .works .row-1 .work-2 {
       width: 360px;
@@ -259,7 +259,7 @@ header {
         justify-content: center;
         box-shadow: -1px 8px 20px 0px #000000;
         transition: 0.6s;
-        transform: scale(1.1);
+        transform: scale(1.01);
         font-size: 36px; }
     .works .row-1 .work-3 {
       width: 360px;
@@ -273,7 +273,7 @@ header {
         justify-content: center;
         box-shadow: -1px 8px 20px 0px #000000;
         transition: 0.6s;
-        transform: scale(1.1);
+        transform: scale(1.01);
         font-size: 36px; }
     .works .row-1 .work-4 {
       width: 360px;
@@ -287,7 +287,7 @@ header {
         justify-content: center;
         box-shadow: -1px 8px 20px 0px #000000;
         transition: 0.6s;
-        transform: scale(1.1);
+        transform: scale(1.01);
         font-size: 36px; }
 
 .row-2 {
